@@ -1,0 +1,32 @@
+td{
+
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    font-family: Sans-serif;
+  }
+
+  
+tr{
+    background-color: #CDE5F3;
+    width: 100px;
+    height: 40px;
+    font-family: Sans-serif;
+}
+
+td:nth-child(1){
+    width: 150px;
+    padding-left: 20px;
+}
+
+tr:nth-child(1){
+    font-weight: bold;
+}
+
+tr:nth-child(1),
+td:nth-child(1) {
+    background-color: #94CCE8;
+    color: rgb(255, 255, 255);
+    text-align:left;
+  }
+

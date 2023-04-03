@@ -1,0 +1,30 @@
+.block{
+    float: left;
+    width: 2000px;
+    box-sizing:border-box;
+    font-family: Sans-serif;
+    
+}
+.s1,.s2,.s3,.s4,.s5{
+    background-color: #CDE5F3;
+    float: left;
+    margin: 1px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    text-align:bottom;
+    padding-top: 10px;
+    
+}
+.s1:nth-child(1),.s2:nth-child(1),.s3:nth-child(1),.s4:nth-child(1),.s5:nth-child(1){
+    padding-left: 20px;
+    text-align: left;
+    width: 150px;
+    background-color: #94CCE8;
+    color: aliceblue;
+}
+.s1:nth-child(n+1){
+    background-color: #94CCE8;
+    color: aliceblue;
+    font-weight: bold;
+}

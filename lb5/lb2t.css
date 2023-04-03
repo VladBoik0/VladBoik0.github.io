@@ -1,0 +1,35 @@
+
+
+td,tr{
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 20px;
+    font-family: Sans-serif;
+    border: 2px solid black;
+    padding-left: 3px;
+
+  }
+
+
+table{
+    border-collapse: collapse;
+    background-color: #E6FFD3;
+    color: rgb(0, 0, 0);
+    text-align:left;
+    border: 2px solid black;
+  }
+  td:nth-child(even){
+    background-color: #D5FFB9;
+    color: rgb(0, 0, 0);
+  }
+  
+.g {
+    background-color: #5DC430;
+    color: #fff;
+    text-align:center;
+}
+
+td:nth-child(6) {
+    width: 180px;
+  }
