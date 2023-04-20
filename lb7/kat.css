@@ -7,6 +7,7 @@ div{
 }
 
 .w,.q{
+    cursor: pointer;
   position: absolute;
   color: #D7D7D7;
   font-weight: bold;
