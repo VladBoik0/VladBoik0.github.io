@@ -1,0 +1,23 @@
+
+.container {
+  display: flex;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+}
+
+.block:nth-child(even) {
+ background-color: #009ABE;
+ }
+
+.block:hover {
+  background-color: #FF9E19;
+ }
