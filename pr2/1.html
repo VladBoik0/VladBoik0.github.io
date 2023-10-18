@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1</title>
+</head>
+<body>
+    <input type="text" id="clock" size="10">
+
+    <script>
+        function checkNull(number) {
+            if (number < 10) {
+                return "0" + number;
+            } else {
+                return number;
+            }
+        }
+
+        function updateTime() {
+            let currentTime = new Date();
+            let hours = checkNull(currentTime.getHours());
+            let minutes = checkNull(currentTime.getMinutes());
+            let seconds = checkNull(currentTime.getSeconds());
+
+            clock.value = hours + ":" + minutes + ":" + seconds;
+
+            setTimeout(updateTime, 1000); 
+        }
+
+        updateTime();
+    </script>
+</body>
+</html>

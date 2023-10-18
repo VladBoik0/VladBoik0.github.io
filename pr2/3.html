@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 4</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body>
+    <p id="output"></p>
+
+
+    <script>
+        let phrase = "Ось як працює Завдання 3.";
+
+
+        function typeEffect(text, elementId) {
+            let i = 0;
+            let interval = setInterval(function() {
+                document.getElementById(elementId).textContent += text[i];
+                i++;
+                if (i >= text.length) {
+                    clearInterval(interval);
+                }
+            }, 100); 
+        }
+
+        window.onload = function() {
+            setTimeout(function() {
+                typeEffect(phrase, "output");
+            }, 500); 
+        }
+
+    </script>
+</body>
+</html>
