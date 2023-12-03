@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>task1</title>
+  <style>
+    div {
+            width: 388px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+  </style>
+</head>
+<body>
+  <div>
+    <label for="fahrenheit">Температура за Фаренгейтом</label>
+    <input type="text" id="fahrenheit" />
+    </div>
+    <div>
+    <label for="celsius">Температура за Цельсієм</label>
+    <input type="text" id="celsius" />
+  </div>
+
+  <script>
+    function calculateTemperature() {
+      const fahrenheit = document.getElementById("fahrenheit").value;
+      const celsius = (fahrenheit - 32) * 5 / 9;
+
+      document.getElementById("celsius").value = celsius;
+    }
+
+    function calculateFahrenheit() {
+      const celsius = document.getElementById("celsius").value;
+      const fahrenheit = (celsius * 9 / 5) + 32;
+
+      document.getElementById("fahrenheit").value = fahrenheit;
+    }
+
+    document.getElementById("fahrenheit").addEventListener("input", calculateTemperature);
+    document.getElementById("celsius").addEventListener("input", calculateFahrenheit);
+  </script>
+</body>
+</html>
