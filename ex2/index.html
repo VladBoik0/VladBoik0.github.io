@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2</title>
+</head>
+<body>
+  <input type="text" id="numberInput">
+  <script>
+    var numberInput = document.getElementById('numberInput');
+    numberInput.addEventListener('input', function() {
+      var inputValue = parseInt(numberInput.value, 10);
+      if (inputValue >= 1 && inputValue <= 100) {
+        numberInput.style.backgroundColor = 'green';
+      } else {
+        numberInput.style.backgroundColor = 'red';
+      }
+    });
+  </script>
+
+</body>
+</html>
